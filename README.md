@@ -36,4 +36,4 @@ very quickly wrote this program to do so.
 
 ### License
 
-MIT
+[MIT](https://github.com/asink/execif/blob/master/LICENSE)
