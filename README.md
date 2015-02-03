@@ -27,6 +27,10 @@ does not initially exist:
 $ execif /path/to/my/project make -C /path/to/my/project
 ```
 
+First arg is the file or directory you're waiting on, the second arg
+and any args after that are the command that will be ran once that
+file or directory exists.
+
 #### Why is this useful?
 
 I had some other processes that are responsible for mounting certain
