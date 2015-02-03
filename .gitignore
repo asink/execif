@@ -1,0 +1,3 @@
+build/execif
+vendor/pkg
+vendor/.deps

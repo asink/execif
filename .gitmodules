@@ -1,0 +1,9 @@
+[submodule "vendor/src/github.com/asink/cli"]
+	path = vendor/src/github.com/asink/cli
+	url = https://github.com/asink/cli.git
+[submodule "vendor/src/github.com/asink/inotify"]
+	path = vendor/src/github.com/asink/inotify
+	url = https://github.com/asink/inotify.git
+[submodule "vendor/src/github.com/asink/libasink"]
+	path = vendor/src/github.com/asink/libasink
+	url = https://github.com/asink/libasink.git
