@@ -24,7 +24,7 @@ An example of running make in a directory that
 does not initially exist:
 
 ```bash
-$ execif /path/to/my/project make -C /path/to/my/project
+$ execif run /path/to/my/project make -C /path/to/my/project
 ```
 
 First arg is the file or directory you're waiting on, the second arg
