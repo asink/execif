@@ -1,4 +1,3 @@
-WREN_DIR=src/wren
 BUILD_DIR=build
 DEPS_FILE=vendor/.deps
 APPLICATION=execif
@@ -30,5 +29,5 @@ clean:
 .PHONY: install
 install: ${BUILD_DIR}/${APPLICATION}
 	@install -m 0755 $^ ${INSTALL_PREFIX}/bin
-	@echo "Wrengo has been successfully installed!"
+	@echo "execif has been successfully installed!"
 	@echo "Execute 'execif --version' to verify."
