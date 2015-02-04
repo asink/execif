@@ -70,6 +70,14 @@ func initExecif() {
 // then execs the asink command once the new
 // file or directory is found.
 func startWatcher(directory string, location string, command asink.Command) {
+    f, err := exists(location)
+    if err != nil {
+        panic(err)
+    }
+    if f == true {
+        command.Exec()
+        os.Exit(0)
+    }
     watcher, err := inotify.NewWatcher()
     if err != nil {
         panic(err)
@@ -89,6 +97,15 @@ func startWatcher(directory string, location string, command asink.Command) {
             println("error:", err)
         }
     }
+}
+
+// Checks to see if the given file or directory already
+// exists.
+func exists(path string) (bool, error) {
+    _, err := os.Stat(path)
+    if err == nil { return true, nil }
+    if os.IsNotExist(err) { return false, nil }
+    return false, err
 }
 
 // Gets the file or directory the user will be waiting
