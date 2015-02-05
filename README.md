@@ -14,6 +14,7 @@ Depends on:
 ```bash
 $ git clone https://github.com/asink/execif.git
 $ cd execif
+$ export GOPATH=$(pwd)/vendor
 $ make
 $ sudo make install
 ```
